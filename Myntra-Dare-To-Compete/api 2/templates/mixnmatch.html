@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Holmes 404</title>
+
+<link rel= "stylesheet" href="{{ url_for('static', filename='css/dressup.css') }}">
+
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+<script src="https://cdn.tutorialjinni.com/interact.js/1.2.9/interact.min.js"></script>
+
+<script type="text/javascript" src="{{ url_for('static', filename='js/dress.js') }}"></script>
+
+</head>
+
+<body>
+<div class="left-options">
+
+	<ul>
+		<li><button class="btn btn-default firstButton" id="shirt_button" type="button" >top</button>
+			<div class="shirtChange panel shirtOne"></div>
+			<div class="shirtChange panel shirtTwo"></div>
+			<div class="shirtChange panel shirtThree"></div>
+			<div class="shirtChange panel shirtFour"></div>
+			<div class="shirtChange panel shirtFive"></div>
+		</li>
+
+		<li><button class="btn btn-default" id="pant_button" type="button">bottom</button>
+			<div class="pantsChange panel pantsOne"></div>
+			<div class="pantsChange panel pantsTwo"></div>
+			<div class="pantsChange panel pantsThree"></div>
+			<div class="pantsChange panel pantsFour"></div>
+			<div class="pantsChange panel pantsFive"></div>
+		</li>
+		<li><button class="btn btn-default" id="reset_button" type="button">reset clothing</button></li>
+		
+	</ul>
+
+
+
+</div>
+
+<div class="main-area">
+
+	<h2 class="topButton">Click on the 'Top' and/or 'Bottom' Button</h2>
+	<h3 class="topButt">Then click on the photos below.</h3>
+	<h4 class="drag">Hold clothing pieces down with mousepad/ mouse and drag onto dummies.</h4>
+
+	
+	<img id="characterTwo" src="https://5.imimg.com/data5/BP/MN/MY-30709680/female-mannequin-stand
+-500x500.jpg" />
+
+
+	  <img id="top1" class="shirt draggable" src="/static/images/top1.jpg" />
+
+	  <img id="top2" class="shirt draggable" src="/static/images/top2.jpg" />
+
+	  <img id="top3" class="shirt draggable" src="/static/images/top3.jpg" />
+
+	  <img id="top4" class="shirt draggable" src="/static/images/top4.jpg" />
+
+	  <img id="top5" class="shirt draggable" src="/static/images/top5.jpg" />
+
+
+
+
+
+		<!-- end of tops -->
+
+		<!-- beginning of pants -->
+
+		<img id="bottom1" class="pant draggable" src="/static/images/bottom1.jpg" />
+
+	  <img id="bottom2"  class="pant draggable" src="/static/images/bottom2.jpg" />
+
+	  <img id="bottom3" class="pant draggable" src="/static/images/bottom3.jpg" />
+
+	  <img id="bottom4" class="pant draggable" src="/static/images/bottom4.jpg" />
+
+	  <img id="bottom5" style="z-index: 3" class="pant draggable" src="/static/images/bottom5.jpg" />
+
+
+		<!-- end of pants -->
+
+</div>
+
+		<!-- right wrapper -->
+
+<div class="right-options">
+	<img id="characterTwoOption" src="https://5.imimg.com/data5/BP/MN/MY-30709680/female-mannequin-stand
+-500x500.jpg" />
+</div>
+
+	</body>
+</html>
